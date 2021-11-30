@@ -22,7 +22,7 @@ interface TransactionsContextData {
   createTransaction: (transaction: TransactionInput) => void;
 }
 
-export const TransactionContext = createContext<TransactionsContextData[]>(
+export const TransactionContext = createContext<TransactionsContextData>(
   {} as TransactionsContextData
 );
 
